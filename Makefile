@@ -66,8 +66,8 @@ test: .py${PYTHON_VERSION}env/env/bin/python
 
 .PHONY: clean
 clean:
-	make destroy
-	$(RM) -r __pycache__
-	-@find molecule/**/.molecule/  -delete
+	-make destroy
+	$(RM) -r .py2env
+	
 
 
