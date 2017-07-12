@@ -1,0 +1,6 @@
+---
+
+- name: Hello world
+  copy:
+    content: "Hello world"
+    dest: ./hello_world.txt
