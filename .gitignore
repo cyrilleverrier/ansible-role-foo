@@ -1,3 +1,4 @@
 .py2env
 molecule/default/.molecule
 *.pyc
+*.log

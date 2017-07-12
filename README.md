@@ -15,6 +15,9 @@ Codename:	xenial
 ```
 $ vagrant --version
 Vagrant 1.9.5
+
+$ vagrant plugin install vagrant-vbguest
+Installed the plugin 'vagrant-vbguest (0.14.2)'
 ```
 
 ## Python
@@ -35,7 +38,7 @@ yamllint==1.8.1
 # Initial commits:
 
 1. `make new-molecule-role`
-2. Replace `image: centos:7` by `box: centos/7` in `molecule/default/molecule.yml`
+2. Replace `image: centos:7` by `box: bento/centos-7.3` in `molecule/default/molecule.yml`
 
 # Reproduce the issue:
 1. `make test`
