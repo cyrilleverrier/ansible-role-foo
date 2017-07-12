@@ -43,5 +43,5 @@ yamllint==1.8.1
 
 # Workaround the issue:
 
-1. Remove `when: server.changed | bool` conditions in ``molecule/default/create.yml`
+1. Remove `when: server.changed | bool` conditions in `molecule/default/create.yml`
 2. make workaround (call `molecule create` twice)
