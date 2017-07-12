@@ -19,8 +19,8 @@ MOLECULE_SCENARIO?=default
 .PHONY: workaround
 workaround: destroy create converge idempotence verify destroy
 
-.PHONY: new-molecule-role
-new-molecule-role: .py${PYTHON_VERSION}env/env/bin/python 
+.PHONY: new-molecule-scenario
+new-molecule-scenario: .py${PYTHON_VERSION}env/env/bin/python 
 	. .py${PYTHON_VERSION}env/env/bin/activate;  molecule $(.MOLECULE_DEBUG) init scenario --role-name ansible-role-foo --scenario-name $(MOLECULE_SCENARIO) --driver-name vagrant
 
 .PHONY: create
