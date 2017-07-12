@@ -1,0 +1,3 @@
+python-vagrant
+git+ssh://git@github.com/metacloud/molecule.git@master
+yamllint==1.8.1
